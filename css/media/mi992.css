@@ -1,0 +1,26 @@
+
+
+/* 
+
+&&& medium 
+
+
+*/
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+
+    .sect .container .aws .left {
+        display: block;
+    }
+
+    .sect .container .aws .right .nav__toggle {
+        display: none;
+    }
+
+
+}
+

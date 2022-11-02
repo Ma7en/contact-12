@@ -1,0 +1,381 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --c-main: #3729b2;
+    --c-bak-1: #f5f4fb;
+    --c-ba-a: #4d40b9;
+    --c-ro: #0fdb9b;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+/* start  */
+.sect {
+    background-color: var(--c-bak-1);
+}
+
+.sect .container .aws {
+    display: flex;
+    position: relative;
+}
+
+
+/* start left */
+.sect .container .aws .left {
+    flex-basis: 30%;
+    background-color: var(--c-bak-1);
+    padding: 100px 0 100px 0px;
+    display: block;
+}
+
+.sect .container .aws .left .box {
+    background-color: var(--c-main);
+    position: relative;
+    padding: 20px 30px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sect .container .aws .left .box::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    border: 50px solid;
+    border-color: var(--c-ro) transparent var(--c-ro) var(--c-ro);
+    transform: rotate(45deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.sect .container .aws .left .box .top {
+    flex-basis: 50%;
+}
+
+.sect .container .aws .left .box .bott {
+    flex-basis: 40%;
+}
+
+
+/* start logo */
+.sect .container .aws .left .box .top .logo {
+    width: 50px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.sect .container .aws .left .box .top .logo img {
+    width: 100%;
+}
+
+
+/* start last */
+.sect .container .aws .left .box .top .last {
+    margin: 20px 0;
+}
+
+.sect .container .aws .left .box .top .last ul {
+    line-height: 2.5;
+    text-transform: capitalize;
+}
+
+.sect .container .aws .left .box .top .last ul li {
+    width: fit-content;
+    margin: 20px 0;
+    padding: 0px 40px 0px 15px;
+}
+
+.sect .container .aws .left .box .top .last ul li.active,
+.sect .container .aws .left .box .top .last ul li:hover {
+    background-color: var(--c-ba-a);
+    width: fit-content;
+    margin: 20px 0;
+    padding: 0px 40px 0px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.sect .container .aws .left .box .top .last ul li a {
+    color: #fff;
+}
+
+
+
+/* start more */
+.sect .container .aws .left .box .bott {
+    margin-top: 100px;
+}
+
+
+.sect .container .aws .left .box .bott .more .we {
+    color: #777;
+}
+
+.sect .container .aws .left .box .bott .more h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sect .container .aws .left .box .bott .more .p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.sect .container .aws .left .box .bott .more .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.sect .container .aws .left .box .bott .more .info a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.sect .container .aws .left .box .bott .more .info p {
+    cursor: pointer;
+}
+
+.sect .container .aws .left .box .bott .more .info:hover a i {
+    animation-name: moving-arrow;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving-arrow {
+    100% {
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+}
+
+}
+
+.sect .container .aws .left .box .bott .more .info a:hover {
+    color: var(--c-ro);
+}
+
+
+
+
+
+
+
+/* start right */
+.sect .container .aws .right {
+    flex-basis: 70%;
+    background-color: var(--c-main);
+    padding: 100px 0px 100px 0px;
+    position: relative;
+}
+
+.sect .container .aws .right .nav__toggle {
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    font-size: 30px;
+    z-index: 3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sect .container .aws .right .nav__toggle .two {
+    display: none;
+}
+
+.sect .container .aws .right .box {
+    background-color: var(--c-bak-1);
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.sect .container .aws .right .box .left-right,
+.sect .container .aws .right .box .right-right {
+    background-color: var(--c-bak-1);
+    flex-basis: 48%;
+    padding: 0;
+}
+
+
+/* start left */
+.sect .container .aws .right .box .left-right .name {
+    margin-bottom: 50px;
+}
+
+.sect .container .aws .right .box .left-right .name h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.sect .container .aws .right .box .left-right .name p {
+    font-size: 30px;
+    color: #999;
+}
+
+
+/* start form */
+.sect .container .aws .right .box .left-right form {
+    width: 100%;
+}
+
+.sect .container .aws .right .box .left-right form input[type="text"], 
+.sect .container .aws .right .box .left-right form input[type="email"],
+.sect .container .aws .right .box .left-right form textarea {
+    width: 100%;
+    max-width: 338px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #989898;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 15px;
+    background-color: var(--c-bak-1);
+    caret-color: var(--c-main);
+}
+
+.sect .container .aws .right .box .left-right form input[type="text"]:focus, 
+.sect .container .aws .right .box .left-right form input[type="email"]:focus,
+.sect .container .aws .right .box .left-right form textarea:focus {
+    outline: none;
+    border-bottom-width: 2px;
+}
+
+.sect .container .aws .right .box .left-right form textarea {
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    min-width: 100%;
+}
+
+
+
+/* start send */
+.sect .container .aws .right .box .left-right form .send {
+    margin-top: 30px;
+    margin-bottom: 95px;
+    padding-left: 25px;
+    color: var(--c-main);
+}
+
+.sect .container .aws .right .box .left-right form .send label {
+    margin-right: 10px;
+}
+
+.sect .container .aws .right .box .left-right form .send input {
+    border: none;
+    outline: none;
+    color: var(--c-main);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--c-bak-1);
+}
+
+.sect .container .aws .right .box .left-right form .send input:focus {
+    outline: none;
+    background-color: var(--c-bak-1);
+}
+
+
+
+
+/* start right */
+.sect .container .aws .right .box .right-right h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.sect .container .aws .right .box .right-right p {
+    color: #999;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+
+.sect .container .aws .right .box .right-right ul {
+    line-height: 2;
+}
+
+.sect .container .aws .right .box .right-right ul li a {
+    color: var(--c-main);
+}
+
+
+
+
+
+/* start img */
+.sect .container .aws .right .box .img {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 400px;
+}
+
+.sect .container .aws .right .box .img img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

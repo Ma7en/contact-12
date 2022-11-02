@@ -1,0 +1,33 @@
+
+/*  */
+
+@media (max-width: 991px) {
+
+
+
+    .sect .container .aws .hidden-l {
+        display: none;
+        /* flex-basis: -0%; */
+        z-index: 2;
+        padding: 50px 0px;
+    }
+
+    .sect .container .aws .right {
+        flex-basis: 100%;
+        padding: 50px 0px;
+    }
+
+
+    .sect .container .aws .left .box::before {
+        display: none;
+    }
+
+    /* .sect .container .aws .left .box {
+        padding: 30px 30px 0px 15px;
+    } */
+
+
+
+
+
+}
